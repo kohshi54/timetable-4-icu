@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable4ICU - 国際基督教大学の時間割アプリ</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+		body {
+		    font-family: 'Roboto', Arial, sans-serif;
+		    line-height: 1.6;
+		    background-color: #f4f4f4;
+		    color: #333;
+		}
+
+        header {
+            background-image: linear-gradient(120deg, #3f87a6, #2f6185);
+            color: white;
+            text-align: center;
+            padding: 4em;
+            position: relative;
+            overflow: hidden;
+            border-bottom-left-radius: 50% 20%;
+            border-bottom-right-radius: 50% 20%;
+        }
+
+        header h1 {
+            font-size: 3.2em;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 1em;
+        }
+
+        header::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://source.unsplash.com/random?university');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3em auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            font-weight: 500;
+            margin-bottom: 1.5em;
+            padding-bottom: 0.5em;
+            border-bottom: 3px solid #3f87a6;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5em;
+            margin-bottom: 2em;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 260px;
+            padding: 1.5em;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			transition: box-shadow 0.3s, transform 0.3s;
+		}
+		.feature:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    	}
+
+		.feature i {
+			font-size: 2.5em;
+			margin-bottom: 0.8em;
+			color: #3f87a6;
+		}
+
+		.feature p {
+			font-size: 1.2em;
+			margin-bottom: 0.5em;
+		}
+
+		a {
+			text-decoration: none;
+			color: #3f87a6;
+			font-weight: 500;
+		}
+
+		a:hover {
+			color: #2f6185;
+		}
+
+		.download-links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 2em;
+		}
+
+		.download-link {
+			display: inline-block;
+			margin: 0 1.5em;
+			padding: 1.2em 2em;
+			background-color: #3f87a6;
+			color: white;
+			border-radius: 8px;
+			transition: background-color 0.3s, transform 0.3s;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			font-size: 1.1em;
+		}
+
+		.download-link:hover {
+			background-color: #2f6185;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+			transform: translateY(-5px);
+		}
+
+		.download-link i {
+			margin-right: 0.5em;
+		}
+
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Timetable4ICU</h1>
+        <p>国際基督教大学の究極の時間割アプリ</p>
+    </header>
+    <main>
+        <section>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-database"></i>
+                    <p>全授業のデータが登録。クラスの登録が簡単で、時間割作成もスムーズ。</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <p>ロンフォーや連続コマの結合で、最適な時間割を簡単に作成。</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cogs"></i>
+                    <p>カスタマイズ可能な授業名や教室設定で、自分だけの時間割に。</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tasks"></i>
+                    <p>タスク管理機能で、課題や試験のスケジュールも一元管理。</p>
+                </div>
+            </div>
+        </section>
+        <section>
+		    <h2>アプリのダウンロード</h2>
+			<!-- Timetable4ICUは、iOSとAndroidで利用できます。以>下のリンクからダウンロードしてください。</p> -->
+			<p>Timetable4ICUは、iOSで利用できます。以下のリンクからダウンロードしてください。</p>
+			<div class="download-links">
+				<a href="https://apps.apple.com/jp/app/timetable4icu/id1605478409" class="download-link"><i class="fab fa-apple"></i>iOS版ダウンロード</a>
+				<!-- <a href="https://play.google.com/store/apps/details?id=com.timetable4icu" class="download-link"><i class="fab fa-google-play"></i>Android版ダウンロード</a> -->
+			</div>
+		</section>
+	</main>
+</body>
+</html>
