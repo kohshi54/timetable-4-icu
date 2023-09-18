@@ -1,2 +1,2 @@
 # kohshi54.github.io/timetable-4-icu
-website for Timetable4ICU
+Timetable4ICU LP ([link](http://timetable4icu.com "timetable4icu"))
